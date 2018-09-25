@@ -1,0 +1,132 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styles */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(247, 206, 130);
+    margin: 20px auto;
+    font-family: 'Arvo', serif;
+}
+
+h1, p {
+    text-align: center;
+    color: rgb(187, 50, 0);
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+
+form {
+    background-color: rgb(250, 240, 223);
+    height: 95%;
+    max-width: 960px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 10px 30px 10px;
+}
+
+.left, .right {
+    margin: 10px 0;
+}
+
+.left {
+    float: left;
+    width: 48.5%;
+    text-align: right;
+    margin-right: 3%;
+    font-size: 1.1rem;
+}
+
+.right {
+    float: left;
+    width: 48.5%;
+}
+
+button[type="submit"]{
+    background-color: rgb(255, 201, 107);
+    border: 0px solid;
+    font-family: 'Arvo', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: rgb(126, 126, 126);
+    margin: 20px auto;
+    padding: 12px 24px;
+    display: block;
+}
+
+button:hover {
+    background-color: rgb(252, 168, 23);
+}
+
+@media(max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        text-align: left;
+        padding-left: 7%;
+    }
+
+    form {
+        width: 90%;
+    }
+    
+    .left, .right {
+        width: 100%;
+        text-align: left;
+    }
+}
