@@ -50,7 +50,6 @@ table {
 /* Styles */
 
 html, body {
-    height: 100%;
     width: 100%;
     background-color: rgb(247, 206, 130);
     margin: 20px auto;
@@ -71,7 +70,7 @@ h1 {
 
 form {
     background-color: rgb(250, 240, 223);
-    height: 95%;
+    min-height: 960px;
     max-width: 960px;
     width: 80%;
     margin: 20px auto;
@@ -118,7 +117,7 @@ button:hover {
 
     p {
         text-align: left;
-        padding-left: 7%;
+        padding: 0 5%;
     }
 
     form {
