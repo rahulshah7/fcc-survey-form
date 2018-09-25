@@ -81,7 +81,7 @@ form {
 input {
     border: 0px;
     border-radius: 10px;
-    height: 1.2rem;
+    height: 1.5rem;
 }
 
 textarea {
@@ -97,9 +97,19 @@ textarea {
 select {
     border: 0px;
     border-radius: 10px;
-    height: 1.2rem;
+    height: 1.5rem;
 }
 
+div.left label{
+    position: relative;
+    top: 0.25rem;
+}
+
+div.right label{
+    position: relative;
+    bottom: 0.5rem;
+    right: 0.25rem;
+}
 
 .left, .right {
     margin: 10px 0;
