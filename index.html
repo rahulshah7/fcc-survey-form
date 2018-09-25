@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet">
     <title>Commute Survey</title>
 
 </head>
@@ -19,72 +19,119 @@
     <form action="/submit" id="survey-form" method="GET">
 
         <fieldset>
-            <label for="name" id="name-label">Name:</label>
-            <input type="text" id="name" placeholder="Enter your full name" name="name" required>
+            <div class="left">
+                <label for="name" id="name-label">Name:</label>
+            </div>
+            <div class="right">
+                <input type="text" id="name" placeholder="Enter your full name" name="name" required>
+            </div>
         </fieldset>
 
         <fieldset>
-            <label for="email" id="email-label">Email:</label>
-            <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            <div class="left">
+                <label for="email" id="email-label">Email:</label>
+            </div>
+            <div class="right">
+                <input type="email" id="email" placeholder="Enter your email" name="email" required>
+            </div>
         </fieldset>
 
         <fieldset>
-            <label for="number" id="number-label">Age:</label>
-            <input type="number" id="number" min="0" max="200" placeholder="Age" name="age" required>
+            <div class="left">
+                <label for="number" id="number-label">Age:</label>
+            </div>
+            <div class="right">
+                <input type="number" id="number" min="0" max="200" placeholder="Age" name="age" required>
+            </div>
         </fieldset>
 
         <fieldset>
-            <label for="dropdown">Gender:</label>
-            <select name="gender" id="dropdown">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-                <option value="unspecified">Prefer not to say</option>
-            </select>
+            <div class="left">
+                <label for="dropdown">Gender:</label>
+            </div>
+            <div class="right">
+                <select name="gender" id="dropdown">
+                    <option selected disabled>--select--</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    <option value="unspecified">Prefer not to say</option>
+                </select>
+            </div>
         </fieldset>
 
         <fieldset>
-            <legend>Commuting to/from:</legend>
-            <input type="radio" name="journey" id="work" value="work">
-            <label for="work">Work</label>
-            <input type="radio" name="journey" id="school" value="school">
-            <label for="school">School</label>
-            <input type="radio" name="journey" id="other" value="other">
-            <label for="other">Other</label>
-        </fieldset>
-        
-        <fieldset>
-            <legend>Mode of transport used (tick all that apply):</legend>
-            
-            <input type="checkbox" name="mode" id="boat" value="boat">
-            <label for="boat">Boat</label>
-            <input type="checkbox" name="mode" id="bus" value="bus">
-            <label for="bus">Bus</label>
-            <input type="checkbox" name="mode" id="car" value="car">
-            <label for="car">Car</label>
-            <input type="checkbox" name="mode" id="coach" value="coach">
-            <label for="coach">Coach</label>
-            <input type="checkbox" name="mode" id="cycle" value="cycle">
-            <label for="cycle">Cycle</label>
-            <input type="checkbox" name="mode" id="motorcycle" value="motorcycle">
-            <label for="motorcycle">Motorcycle</label>
-            <input type="checkbox" name="mode" id="plane" value="plane">
-            <label for="plane">Plane</label>
-            <input type="checkbox" name="mode" id="train" value="train">
-            <label for="train">Train</label>
-            <input type="checkbox" name="mode" id="on-foot" value="on-foot">
-            <label for="on-foot">On foot</label>
-
+            <div class="left">
+                <legend>Commuting to/from:</legend>
+            </div>
+            <div class="right">
+                <input type="radio" name="journey" id="work" value="work">
+                <label for="work">Work</label>
+                <input type="radio" name="journey" id="school" value="school">
+                <label for="school">School</label>
+                <input type="radio" name="journey" id="other" value="other">
+                <label for="other">Other</label>
+            </div>
         </fieldset>
 
         <fieldset>
+            <div class="left">
+                <legend>Mode of transport used (tick all that apply):</legend>
+            </div>
 
-            <label for="comments">How could your commute be improved:</label>
-            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <div class="right">
+                <ul>
+                    <li>
+                        <input type="checkbox" name="mode" id="boat" value="boat">
+                        <label for="boat">Boat</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="bus" value="bus">
+                        <label for="bus">Bus</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="car" value="car">
+                        <label for="car">Car</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="coach" value="coach">
+                        <label for="coach">Coach</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="cycle" value="cycle">
+                        <label for="cycle">Cycle</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="motorcycle" value="motorcycle">
+                        <label for="motorcycle">Motorcycle</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="plane" value="plane">
+                        <label for="plane">Plane</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="train" value="train">
+                        <label for="train">Train</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="mode" id="on-foot" value="on-foot">
+                        <label for="on-foot">On foot</label>
+                    </li>
+                </ul>
+            </div>
         </fieldset>
 
         <fieldset>
-                <input id="submit" type="submit" value="Submit">
+            <div class="left">
+                <label for="comments">How could your commute be improved:</label>
+            </div>
+            <div class="right">
+                <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <button id="submit" type="submit">Submit</button>
         </fieldset>
     </form>
 
