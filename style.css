@@ -53,7 +53,7 @@ html, body {
     width: 100%;
     background-color: rgb(247, 206, 130);
     margin: 20px auto;
-    font-family: 'Arvo', serif;
+    font-family: 'Muli', sans-serif;
 }
 
 h1, p {
@@ -70,12 +70,36 @@ h1 {
 
 form {
     background-color: rgb(250, 240, 223);
+    border-radius: 3%;
     min-height: 960px;
     max-width: 960px;
     width: 80%;
     margin: 20px auto;
     padding: 10px 10px 30px 10px;
 }
+
+input {
+    border: 0px;
+    border-radius: 10px;
+    height: 1.2rem;
+}
+
+textarea {
+    border: 0px;
+    border-radius: 10px;
+}
+
+::placeholder {
+    font-family: 'Muli', sans-serif;
+    padding-left: 5px;
+}
+
+select {
+    border: 0px;
+    border-radius: 10px;
+    height: 1.2rem;
+}
+
 
 .left, .right {
     margin: 10px 0;
@@ -96,11 +120,12 @@ form {
 
 button[type="submit"]{
     background-color: rgb(255, 201, 107);
-    border: 0px solid;
-    font-family: 'Arvo', serif;
+    border: 0px;
+    border-radius: 7px;
+    font-family: 'Muli', sans-serif;
     font-weight: 500;
     font-size: 1.1rem;
-    color: rgb(126, 126, 126);
+    color: rgb(187, 50, 0);
     margin: 20px auto;
     padding: 12px 24px;
     display: block;
